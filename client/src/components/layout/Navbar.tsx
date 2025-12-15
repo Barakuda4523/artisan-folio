@@ -38,12 +38,12 @@ export function Navbar() {
               {link.label}
             </Link>
           ))}
-          <a
-            href="/resume.pdf"
+          <Link
+            href="/resume"
             className="px-4 py-2 text-sm font-medium bg-white/5 hover:bg-white/10 border border-white/10 rounded-sm transition-colors"
           >
             Resume
-          </a>
+          </Link>
         </div>
 
         {/* Mobile Toggle */}
@@ -73,12 +73,13 @@ export function Navbar() {
               {link.label}
             </Link>
           ))}
-          <a
-            href="/resume.pdf"
+          <Link
+            href="/resume"
+            onClick={() => setIsOpen(false)}
             className="px-4 py-3 text-center font-medium bg-white/5 hover:bg-white/10 border border-white/10 rounded-sm transition-colors"
           >
-            Download Resume
-          </a>
+            Resume
+          </Link>
         </div>
       )}
     </nav>

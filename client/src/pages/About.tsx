@@ -71,9 +71,9 @@ export function About() {
             <div className="space-y-8">
               <div className="rounded-2xl overflow-hidden border border-white/10 bg-white/5">
                 <img
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=800"
-                  alt="Profile"
-                  className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                  src="/portrait.png"
+                  alt="Portrait"
+                  className="w-full h-auto"
                 />
               </div>
 

@@ -132,3 +132,7 @@ export const skills = [
   { category: "Programming", items: ["Python", "HLSL/GLSL", "Blueprints", "C++ (Basic)"] },
   { category: "Performance", items: ["RenderDoc", "Unreal Insights", "GPU Profiling", "LOD Management"] }
 ];
+
+export const site = {
+  resumeUrl: "/resume.pdf"
+};

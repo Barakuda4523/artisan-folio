@@ -8,6 +8,7 @@ import { Home } from "@/pages/Home";
 import { ProjectDetails } from "@/pages/ProjectDetails";
 import { About } from "@/pages/About";
 import { Contact } from "@/pages/Contact";
+import { Resume } from "@/pages/Resume";
 
 function Router() {
   return (
@@ -15,11 +16,13 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/about" component={About} />
       <Route path="/contact" component={Contact} />
+      <Route path="/resume" component={Resume} />
       <Route path="/project/:id" component={ProjectDetails} />
       <Route component={NotFound} />
     </Switch>
   );
 }
+
 
 function App() {
   return (
