@@ -76,7 +76,10 @@ export function Navbar() {
           <Link
             href="/resume"
             onClick={() => setIsOpen(false)}
-            className="px-4 py-3 text-center font-medium bg-white/5 hover:bg-white/10 border border-white/10 rounded-sm transition-colors"
+            className={cn(
+              "text-lg font-medium transition-colors hover:text-primary",
+              location === "/resume" ? "text-primary" : "text-muted-foreground",
+            )}
           >
             Resume
           </Link>

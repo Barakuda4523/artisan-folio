@@ -18,31 +18,53 @@ export function About() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {/* Left column */}
-            <div className="md:col-span-2 space-y-8">
+            <div className="md:col-span-2 space-y-8 order-2 md:order-1">
               <div className="prose prose-invert prose-lg">
-                <p className="text-xl leading-relaxed text-muted-foreground">
-                  I’m an Unreal Engine 5 Technical Artist focused on performance
-                  optimization and tools/pipeline workflows. I primarily work in
-                  UE5 and Blender, building efficient environments, materials,
-                  VFX, and small tools that keep projects stable, fast, and easy
-                  to maintain.
-                </p>
+                <div className="space-y-4 text-muted-foreground leading-relaxed">
+                  <p>
+                    I’m a UE5 Technical Artist focused on performance
+                    optimization and tools/pipeline workflows.
+                  </p>
 
-                <p className="text-muted-foreground">
-                  Right now I’m building a portfolio of practical UE5
-                  optimization and tooling case studies with measurable results
-                  (FPS, frame time, memory, shader cost). I enjoy profiling,
-                  fixing bottlenecks, and setting clear workflows (naming,
-                  scale, pivots, budgets) so production stays predictable.
-                </p>
+                  <div>
+                    <p className="font-medium text-foreground">What I do:</p>
+                    <ul className="mt-2 list-disc pl-5 space-y-1">
+                      <li>
+                        Profiling and bottleneck isolation (Unreal Insights,
+                        RenderDoc)
+                      </li>
+                      <li>
+                        Optimization workflows (LODs, texel density,
+                        shader/material cost)
+                      </li>
+                      <li>
+                        Tools &amp; pipeline automation (Blueprints/Python
+                        utilities)
+                      </li>
+                    </ul>
+                  </div>
 
-                <p className="text-muted-foreground">
-                  My background spans both traditional 3D art and programming,
-                  allowing me to speak both languages fluently. I believe that
-                  good tech art is invisible—it’s the frame rate you don’t
-                  notice dropping, the tool that just works, and the workflow
-                  that feels intuitive.
-                </p>
+                  <p>
+                    I build efficient environments, materials, and VFX systems
+                    that stay stable, fast, and easy to maintain. I like turning
+                    “messy” production problems into clear budgets and workflows
+                    that artists can follow without friction.
+                  </p>
+
+                  <p>
+                    <span className="font-medium text-foreground">
+                      Currently building:
+                    </span>{" "}
+                    measurable UE5 optimization and tooling case studies (FPS,
+                    frame time, memory, shader cost). I’ll add selected
+                    breakdowns here as they become production-ready.
+                  </p>
+
+                  <p>
+                    If you have a performance or tooling challenge, I’m happy to
+                    talk.
+                  </p>
+                </div>
               </div>
 
               <div className="pt-8">
@@ -51,24 +73,67 @@ export function About() {
                 </h2>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-                  {skills.map((skillGroup) => (
-                    <div key={skillGroup.category}>
-                      <h3 className="font-bold text-primary mb-3 border-b border-primary/20 pb-2 inline-block">
-                        {skillGroup.category}
-                      </h3>
-                      <ul className="space-y-2 text-muted-foreground">
-                        {skillGroup.items.map((item) => (
-                          <li key={item}>• {item}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  ))}
+                  {/* Core Engine */}
+                  <div>
+                    <h3 className="font-bold text-primary mb-3 border-b border-primary/20 pb-2 inline-block">
+                      Core Engine
+                    </h3>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li>Unreal Engine 5</li>
+                    </ul>
+                  </div>
+
+                  {/* DCC Tools */}
+                  <div>
+                    <h3 className="font-bold text-primary mb-3 border-b border-primary/20 pb-2 inline-block">
+                      DCC Tools
+                    </h3>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li>Blender</li>
+                      <li>Substance Designer</li>
+                    </ul>
+                  </div>
+
+                  {/* Programming / Tools */}
+                  <div>
+                    <h3 className="font-bold text-primary mb-3 border-b border-primary/20 pb-2 inline-block">
+                      Programming / Tools
+                    </h3>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li>Blueprints (intermediate)</li>
+                    </ul>
+                  </div>
+
+                  {/* Performance */}
+                  <div>
+                    <h3 className="font-bold text-primary mb-3 border-b border-primary/20 pb-2 inline-block">
+                      Performance
+                    </h3>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li>Unreal Insights </li>
+                      <li>GPU Profiling </li>
+                      <li>LOD Management </li>
+                    </ul>
+                  </div>
+
+                  {/* Currently Learning */}
+                  <div className="sm:col-span-2">
+                    <h3 className="font-bold text-primary mb-3 border-b border-primary/20 pb-2 inline-block">
+                      Currently Learning
+                    </h3>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li>RenderDoc</li>
+                      <li>Python</li>
+                      <li>C++</li>
+                      <li>Houdini</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
 
             {/* Right column */}
-            <div className="space-y-8">
+            <div className="space-y-8 order-1 md:order-2">
               <div className="rounded-2xl overflow-hidden border border-white/10 bg-white/5">
                 <img
                   src="/portrait.png"
