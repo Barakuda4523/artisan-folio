@@ -9,11 +9,14 @@ import { ProjectDetails } from "@/pages/ProjectDetails";
 import { About } from "@/pages/About";
 import { Contact } from "@/pages/Contact";
 import { Resume } from "@/pages/Resume";
+import { Work } from "@/pages/Work";
 
 function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
+      <Route path="/work" component={Work} />
+
       <Route path="/about" component={About} />
       <Route path="/contact" component={Contact} />
       <Route path="/resume" component={Resume} />
@@ -22,7 +25,6 @@ function Router() {
     </Switch>
   );
 }
-
 
 function App() {
   return (
